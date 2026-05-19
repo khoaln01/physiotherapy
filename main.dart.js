@@ -81467,7 +81467,7 @@ A.afS.prototype={
 $0(){return this.a.f=!1},
 $S:0}
 A.afT.prototype={
-$1(a){return a.b==="S3_STM32_Bridge"},
+$1(a){return a.b==="S_STM32_Bridge"},
 $S:192}
 A.afU.prototype={
 $0(){var s=this
@@ -81641,7 +81641,7 @@ s=p}for(;;)switch(s){case 0:p=4
 k=v.G
 k.setBleCallback(A.iF(new A.XD(n)))
 s=7
-return A.W(A.ho(k.bleConnect("S_STM32_Bridge","6e400001-b5a3-f393-e0a9-e50e24dcca9e","6e400001-b5a3-f393-e0a9-e50e24dcca9e"),t.y),$async$wz)
+return A.W(A.ho(k.bleConnect("S_STM32_Bridge","6E400001-B5A3-F393-E0A9-E50E24DCCA9E","6E400001-B5A3-F393-E0A9-E50E24DCCA9E"),t.y),$async$wz)
 case 7:m=b
 k=m
 n.b=k
