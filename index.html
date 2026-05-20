@@ -1,46 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
   <base href="/physiotherapy/">
-
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="flutter_application_1">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>flutter_application_1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your App Name</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <!--
-    You can customize the "flutter_bootstrap.js" script.
-    This is useful to provide a custom configuration to the Flutter loader
-    or to give the user feedback during the initialization process.
+  <script>
+    let _char     = null;
+    let _device   = null;
+    let _bleCallback = null;
 
-    For more details:
-    * https://docs.flutter.dev/platform-integration/web/initialization
-  -->
+    window.setBleCallback = function(cb) {
+      _bleCallback = cb;
+    };
+
+    window.bleConnect = async function() {
+      try {
+        // Step 1: Device picker
+        _device = await navigator.bluetooth.requestDevice({
+          acceptAllDevices: true,
+          optionalServices: ['6e400001-b5a3-f393-e0a9-e50e24dcca9e']
+        });
+        console.log('Device selected:', _device.name);
+
+        // Step 2: Small delay before GATT — helps on Windows
+        await new Promise(r => setTimeout(r, 500));
+
+        // Step 3: GATT connect with retry
+        let server = null;
+        for (let i = 1; i <= 5; i++) {
+          try {
+            console.log('GATT attempt', i);
+            server = await _device.gatt.connect();
+            console.log('GATT connected');
+            break;
+          } catch(e) {
+            console.warn('GATT attempt', i, 'failed:', e.message);
+            await new Promise(r => setTimeout(r, 1000));
+          }
+        }
+        if (!server) throw new Error('GATT failed after 5 attempts');
+
+        // Step 4: Get service
+        console.log('Getting service...');
+        const service = await server.getPrimaryService(
+          '6e400001-b5a3-f393-e0a9-e50e24dcca9e'
+        );
+        console.log('Service OK');
+
+        // Step 5: Get characteristics
+        // TX = 6e400003 (ESP32 → browser, NOTIFY)
+        // RX = 6e400002 (browser → ESP32, WRITE)
+        const txChar = await service.getCharacteristic(
+          '6e400003-b5a3-f393-e0a9-e50e24dcca9e'
+        );
+        const rxChar = await service.getCharacteristic(
+          '6e400002-b5a3-f393-e0a9-e50e24dcca9e'
+        );
+        console.log('Characteristics OK');
+
+        // Step 6: Store write char and enable notifications
+        _char = rxChar;
+        await txChar.startNotifications();
+        console.log('Notifications enabled');
+
+        // Step 7: Listen for incoming data
+        txChar.addEventListener('characteristicvaluechanged', (event) => {
+          const decoded = new TextDecoder().decode(event.target.value);
+          console.log('RX:', decoded);
+          if (_bleCallback) _bleCallback(decoded);
+        });
+
+        // Step 8: Handle disconnect
+        _device.addEventListener('gattserverdisconnected', () => {
+          console.log('Disconnected');
+          _char   = null;
+          _device = null;
+        });
+
+        console.log('BLE ready');
+        return true;
+      } catch(e) {
+        console.error('BLE error:', e);
+        return false;
+      }
+    };
+
+    window.bleSend = async function(cmd) {
+      if (!_char) { console.warn('Not connected'); return false; }
+      try {
+        const bytes = new TextEncoder().encode(cmd);
+        await _char.writeValueWithoutResponse(bytes);
+        console.log('TX:', cmd);
+        return true;
+      } catch(e) {
+        console.error('Send error:', e);
+        return false;
+      }
+    };
+
+    window.bleDisconnect = function() {
+      try {
+        if (_device && _device.gatt.connected) {
+          _device.gatt.disconnect();
+        }
+      } catch(_) {}
+      _char   = null;
+      _device = null;
+    };
+  </script>
+
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

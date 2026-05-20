@@ -41049,7 +41049,7 @@ if(s!=null&&s.a!=null)return
 r=this.w
 if(r){p.z=B.ax
 q=p.jg(1,B.dJ,B.Do)}else{p.z=B.ax
-q=p.jg(0,B.CN,B.Du)}q.bW(new A.af0(this,r),t.H)},
+q=p.jg(0,B.CN,B.Dv)}q.bW(new A.af0(this,r),t.H)},
 a8h(a){this.ah(new A.af5(this,a))},
 N(b0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5=this,a6=null,a7=a5.a,a8=a7.w==null,a9=!a8
 a7=a7.y
@@ -42909,7 +42909,7 @@ else if(t.ks.b(a))s.av$.ai(a)},
 a5o(){if(this.c<=0)this.gNu().eE(0)},
 gNu(){var s=this,r=s.bf$
 if(r===$){$.vp()
-r=s.bf$=new A.ajV(A.v(t.S,t.GG),B.w,new A.tx(),s.ga58(),s.ga5n(),B.Dt)}return r}}
+r=s.bf$=new A.ajV(A.v(t.S,t.GG),B.w,new A.tx(),s.ga58(),s.ga5n(),B.Du)}return r}}
 A.a1g.prototype={
 $0(){var s=null
 return A.c([A.iQ("Event",this.a,!0,B.bo,s,s,s,B.aR,!1,!0,!0,B.bP,s)],t.D)},
@@ -46318,7 +46318,7 @@ return q}}
 A.xJ.prototype={
 ru(a){var s=this.ch
 s===$&&A.a()
-s.e=B.Dw
+s.e=B.Dx
 s.bR(0)
 s=this.cx
 s===$&&A.a()
@@ -47872,7 +47872,7 @@ i=A.bO(j,c8.gar().ax,h,c9,k,g,n.at)
 f=c8.a.y&&!c8.ga6y()
 n=f?1:0
 c8.gar()
-e=A.arL(i,B.ar,B.Dv,n)}else e=c9
+e=A.arL(i,B.ar,B.Dw,n)}else e=c9
 c8.gar()
 if(c8.a.r)d=c8.glm()?c8.gar().n:c8.gar().M
 else d=c8.glm()?c8.gar().O:c8.gar().Y
@@ -49087,7 +49087,7 @@ an(){return new A.O2(null,null)}}
 A.O2.prototype={
 aw(){var s,r=this
 r.aS()
-s=A.c5(null,B.Dx,null,null,r)
+s=A.c5(null,B.Dy,null,null,r)
 r.d!==$&&A.b7()
 r.d=s
 r.P7()},
@@ -81130,7 +81130,7 @@ if(r>0&&!q.e)r="Debug: "+r+" / 10"
 else r="Entering debug mode"
 n.push(A.z_(p,A.m0(B.a5,!0,p,A.dz(p,A.bO(r,p,p,p,B.R2,B.bk,p),B.t,p,p,new A.cu(B.Ce,p,p,s,p,p,B.ad),p,p,p,B.E4,p,p,p),B.t,B.L,0,p,p,p,p,p,B.cJ),p,p,12,12,o+6,p))}if(q.e)n.push(A.z_(0,q.a0q(),p,p,0,0,p,p))
 return new A.cM(1/0,1/0,A.tv(B.cY,n,B.a4,B.dC),p)},
-a0q(){var s=this,r=null,q=t.p,p=A.dz(r,A.ex(A.c([B.TC,B.f2,A.kb(r,B.TJ,B.ah,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.YY(s),r,r,r,r,r,r),B.kU,A.kb(r,B.Tv,B.ah,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.YZ(s),r,r,r,r,r,r)],q),B.K,B.z,B.G,0,r),B.t,B.ag,r,r,r,r,r,B.E1,r,r,r),o=A.dz(r,B.LN,B.t,B.CC,r,r,r,r,r,B.E_,r,r,r),n=s.r.length
+a0q(){var s=this,r=null,q=t.p,p=A.dz(r,A.ex(A.c([B.TB,B.f2,A.kb(r,B.TJ,B.ah,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.YY(s),r,r,r,r,r,r),B.kU,A.kb(r,B.Tv,B.ah,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.YZ(s),r,r,r,r,r,r)],q),B.K,B.z,B.G,0,r),B.t,B.ag,r,r,r,r,r,B.E1,r,r,r),o=A.dz(r,B.LN,B.t,B.CC,r,r,r,r,r,B.E_,r,r,r),n=s.r.length
 return A.m0(B.a5,!0,r,A.dz(r,A.e6(A.c([p,o,A.fn(n===0?B.BD:A.aty(s.w,new A.Z_(s),n,r),1)],q),B.K,B.z,B.G),B.t,r,r,B.Al,r,260,r,r,r,r,r),B.t,B.L,0,r,r,r,r,r,B.cJ)}}
 A.Z6.prototype={
 $0(){var s=this.a.r,r=A.dV("[\\r\\n]",!0,!1),q=t.N
@@ -81197,7 +81197,7 @@ return A.dz(o,A.ex(A.c([k,s,B.NK,A.fn(A.bO(r,o,B.bG,o,B.PR,o,o),1)],t.p),B.K,B.z
 $S:491}
 A.Jz.prototype={
 N(a){var s=null
-return new A.ye(B.Ve,new A.a5U(),"Khoa Le",A.tO(s,A.asc(B.a3,s,s,B.ag),"Roboto",!0),!1,s)}}
+return new A.ye(B.Ve,new A.a5U(),"Physiotherapy",A.tO(s,A.asc(B.a3,s,s,B.ag),"Roboto",!0),!1,s)}}
 A.a5U.prototype={
 $2(a,b){b.toString
 return new A.nM(b,null)},
@@ -81229,7 +81229,7 @@ break}m=p.d
 k=B.b.i3(m,new A.afT())
 m=""+(m.length+1)
 $.vp()
-p.ah(new A.afU(p,k,new A.r2("device_"+m,"STM32 #"+m,!0,B.fR,o,new A.tx())))
+p.ah(new A.afU(p,k,new A.r2("device_"+m,"Device #"+m,!0,B.fR,o,new A.tx())))
 case 1:return A.S(q,r)}})
 return A.T($async$vx,r)},
 kf(a){return this.aby(a)},
@@ -81241,21 +81241,21 @@ o=a.f
 s=3
 return A.W(o.el(0,"CMD:PROFILE:"+B.c.a3(a.w,2)),$async$kf)
 case 3:s=4
-return A.W(o.H7("profile"),$async$kf)
+return A.W(o.H7("Profile"),$async$kf)
 case 4:if(!c){k.$2(B.em,"Step 1 timed out \u2014 device did not confirm profile.")
 s=1
 break}k.$2(B.mS,"Sending target force...")
 s=5
 return A.W(o.el(0,"CMD:TARGET:"+B.c.a3(a.y,2)),$async$kf)
 case 5:s=6
-return A.W(o.H7("loaded"),$async$kf)
+return A.W(o.H7("Loaded"),$async$kf)
 case 6:if(!c){k.$2(B.em,"Step 2 timed out \u2014 device did not confirm target.")
 s=1
 break}k.$2(B.mT,"Activating mode 2...")
 s=7
 return A.W(o.el(0,"CMD:MODE:2"),$async$kf)
 case 7:s=8
-return A.W(o.H7("ready"),$async$kf)
+return A.W(o.H7("Ready"),$async$kf)
 case 8:if(!c){k.$2(B.em,"Step 3 timed out \u2014 device did not become ready.")
 s=1
 break}a.at.l9(0)
@@ -81330,7 +81330,7 @@ return A.T($async$vW,r)},
 N(a){var s=t.p
 return A.auz(B.BU,A.L4(!0,A.e6(A.c([this.a0v(),A.fn(A.ex(A.c([this.a0p(),A.fn(this.a0g(),1)],s),B.K,B.z,B.G,0,null),1)],s),B.K,B.z,B.G),!0))},
 a0v(){var s=null,r=this.d
-return A.dz(s,A.ex(A.c([B.Tx,B.f2,A.bO(""+new A.aY(r,new A.afI(),A.a4(r).i("aY<1>")).gC(0)+" device(s) connected",s,s,s,B.l4,s,s)],t.p),B.K,B.z,B.G,0,s),B.t,B.ag,s,s,s,48,s,B.Ea,s,s,s)},
+return A.dz(s,A.ex(A.c([B.TD,B.f2,A.bO(""+new A.aY(r,new A.afI(),A.a4(r).i("aY<1>")).gC(0)+" device(s) connected",s,s,s,B.l4,s,s)],t.p),B.K,B.z,B.G,0,s),B.t,B.ag,s,s,s,48,s,B.Ea,s,s,s)},
 a0p(){var s,r,q,p,o,n=this,m=null,l=A.dz(m,B.LO,B.t,m,m,B.Ah,m,m,m,B.n1,m,m,m),k=n.d.length
 k=A.fn(k===0?B.BC:A.aty(m,new A.afH(n),k,B.n3),1)
 s=n.f?m:n.gaar()
@@ -81583,7 +81583,7 @@ $0(){return this.a.a1j(this.b)},
 $S:0}
 A.afL.prototype={
 $1(a){var s=null,r=A.cZ(14),q=this.a
-return new A.qq(B.TF,B.TK,A.c([A.apx(B.TB,new A.afJ(q),s),A.HT(B.Ty,new A.afK(q,this.b),A.x3(s,s,B.ec,s,s,s,0,s,s,B.k,s,s,s,s,new A.cb(A.cZ(8),B.n),s,s,s,s,s))],t.p),new A.cb(r,B.n),s)},
+return new A.qq(B.TF,B.TK,A.c([A.apx(B.TA,new A.afJ(q),s),A.HT(B.Tx,new A.afK(q,this.b),A.x3(s,s,B.ec,s,s,s,0,s,s,B.k,s,s,s,s,new A.cb(A.cZ(8),B.n),s,s,s,s,s))],t.p),new A.cb(r,B.n),s)},
 $S:498}
 A.afJ.prototype={
 $0(){var s=this.a.c
@@ -81601,7 +81601,7 @@ A.N1.prototype={
 a7I(a){var s=null,r=A.c([],t.Zt),q=$.ap,p=t.LR,o=t.zh,n=A.jc(B.c8),m=A.c([],t.wi),l=$.av(),k=$.ap
 A.oH(a,!1).nz(new A.yR(new A.adf(),new A.adg(),B.DA,!1,!0,!1,s,s,s,r,A.aQ(t.f9),new A.bt(s,t.Ts),new A.bt(s,t.A),new A.yS(),s,0,new A.bI(new A.aB(q,p),o),n,m,s,B.xN,new A.c3(s,l),new A.bI(new A.aB(k,p),o),new A.bI(new A.aB(k,p),o),t.K3))},
 N(a){var s=null,r=A.as3(),q=A.dz(s,B.ES,B.t,s,s,new A.cu(B.k.mi(0.15),s,s,s,s,s,B.fl),s,88,s,s,s,s,88),p=r?new A.adh(this,a):s
-return A.auz(B.ag,A.L4(!0,new A.cC(B.Ei,A.e6(A.c([B.f2,q,B.kW,B.TA,B.yF,B.TI,B.cP,B.TH,B.f2,B.Vn,B.kV,A.eh(A.HT(B.TD,p,A.x3(s,s,B.k,B.k.mi(0.4),s,s,0,s,s,B.ag,s,s,B.DW,s,new A.cb(A.cZ(14),B.n),s,s,s,s,s)),s,1/0),B.NO],t.p),B.K,B.dh,B.G),s),!0))}}
+return A.auz(B.ag,A.L4(!0,new A.cC(B.Ei,A.e6(A.c([B.f2,q,B.kW,B.Tz,B.yF,B.TI,B.cP,B.TH,B.f2,B.Vn,B.kV,A.eh(A.HT(B.TC,p,A.x3(s,s,B.k,B.k.mi(0.4),s,s,0,s,s,B.ag,s,s,B.DW,s,new A.cb(A.cZ(14),B.n),s,s,s,s,s)),s,1/0),B.NO],t.p),B.K,B.dh,B.G),s),!0))}}
 A.adf.prototype={
 $3(a,b,c){return B.D4},
 $C:"$3",
@@ -81641,11 +81641,11 @@ s=p}for(;;)switch(s){case 0:p=4
 k=v.G
 k.setBleCallback(A.iF(new A.XD(n)))
 s=7
-return A.W(A.ho(k.bleConnect("S3_STM32_Bridge","6e400001-b5a3-f393-e0a9-e50e24dcca9e","6e400001-b5a3-f393-e0a9-e50e24dcca9e"),t.y),$async$wz)
+return A.W(A.ho(k.bleConnect(),t.y),$async$wz)
 case 7:m=b
 k=m
 n.b=k
-if(k)n.qS("Connected to S3_STM32_Bridge","RX")
+if(k)n.qS("BLE connected","RX")
 k=n.b
 q=k
 s=1
@@ -81690,7 +81690,7 @@ case 6:case 1:return A.S(q,r)
 case 2:return A.R(o.at(-1),r)}})
 return A.T($async$el,r)},
 tI(a,b){return this.amz(a,b)},
-H7(a){return this.tI(a,B.Dy)},
+H7(a){return this.tI(a,B.Dt)},
 amz(a,b){var s=0,r=A.U(t.y),q,p=2,o=[],n=this,m,l,k
 var $async$tI=A.V(function(c,d){if(c===1){o.push(d)
 s=p}for(;;)switch(s){case 0:p=4
@@ -84763,17 +84763,17 @@ B.je=new A.aN(125e3)
 B.Dq=new A.aN(14e4)
 B.Dr=new A.aN(15e3)
 B.Ds=new A.aN(15e5)
-B.Dt=new A.aN(16667)
+B.Dt=new A.aN(15e6)
+B.Du=new A.aN(16667)
 B.cv=new A.aN(167e3)
-B.Du=new A.aN(18e4)
-B.Dv=new A.aN(2e4)
+B.Dv=new A.aN(18e4)
+B.Dw=new A.aN(2e4)
 B.a5=new A.aN(2e5)
 B.fT=new A.aN(2e6)
-B.Dw=new A.aN(225e3)
+B.Dx=new A.aN(225e3)
 B.mX=new A.aN(25e4)
-B.Dx=new A.aN(2961926e3)
+B.Dy=new A.aN(2961926e3)
 B.bQ=new A.aN(3e5)
-B.Dy=new A.aN(3e6)
 B.mY=new A.aN(35e4)
 B.mZ=new A.aN(375e3)
 B.Dz=new A.aN(4e4)
@@ -86256,8 +86256,8 @@ B.xN=new A.il(null,null)
 B.l5=new A.k(!0,B.ca,null,null,null,null,10,B.bT,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Ts=new A.cD("Time",null,B.l5,null,null,null,null,null,null)
 B.NQ=new A.cM(72,null,B.Ts,null)
-B.Tz=new A.cD("Dir",null,B.l5,null,null,null,null,null,null)
-B.NL=new A.cM(36,null,B.Tz,null)
+B.Ty=new A.cD("Dir",null,B.l5,null,null,null,null,null,null)
+B.NL=new A.cM(36,null,B.Ty,null)
 B.Tq=new A.cD("Message",null,B.l5,null,null,null,null,null,null)
 B.Eu=new A.rb(1,B.h4,B.Tq,null)
 B.Hf=s([B.NQ,B.NL,B.Eu],t.p)
@@ -86885,17 +86885,17 @@ B.Tt=new A.cD("Back to setup",null,null,null,null,null,null,null,null)
 B.Tv=new A.cD("Close",null,B.l4,null,null,null,null,null,null)
 B.RC=new A.k(!0,null,null,null,null,null,14,B.J,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Tw=new A.cD("Start session",null,B.RC,null,null,null,null,null,null)
-B.Rj=new A.k(!0,B.k,null,null,null,null,16,B.J,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Tx=new A.cD("S3 BLE Dashboard",null,B.Rj,null,null,null,null,null,null)
-B.Ty=new A.cD("End session",null,null,null,null,null,null,null,null)
+B.Tx=new A.cD("End session",null,null,null,null,null,null,null,null)
 B.Pz=new A.k(!0,B.M,null,null,null,null,12,B.q,null,2,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.TA=new A.cD("WELCOME TO",null,B.Pz,null,null,null,null,null,null)
+B.Tz=new A.cD("WELCOME TO",null,B.Pz,null,null,null,null,null,null)
 B.T7=new A.k(!0,B.ca,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.TB=new A.cD("Cancel",null,B.T7,null,null,null,null,null,null)
+B.TA=new A.cD("Cancel",null,B.T7,null,null,null,null,null,null)
 B.RD=new A.k(!0,B.k,null,null,null,null,12,B.bT,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.TC=new A.cD("BLE Log",null,B.RD,null,null,null,null,null,null)
+B.TB=new A.cD("BLE Log",null,B.RD,null,null,null,null,null,null)
 B.QG=new A.k(!0,null,null,null,null,null,16,B.bT,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.TD=new A.cD("Start",null,B.QG,null,null,null,null,null,null)
+B.TC=new A.cD("Start",null,B.QG,null,null,null,null,null,null)
+B.Rj=new A.k(!0,B.k,null,null,null,null,16,B.J,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.TD=new A.cD("BWS System - PT Lab - VNG",null,B.Rj,null,null,null,null,null,null)
 B.PO=new A.k(!0,null,null,null,null,null,null,B.J,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.TF=new A.cD("End session?",null,B.PO,null,null,null,null,null,null)
 B.TG=new A.cD("Set",null,null,null,null,null,null,null,null)
