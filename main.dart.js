@@ -81641,11 +81641,11 @@ s=p}for(;;)switch(s){case 0:p=4
 k=v.G
 k.setBleCallback(A.iF(new A.XD(n)))
 s=7
-return A.W(A.ho(k.bleConnect("S_STM32_Bridge","6E400001-B5A3-F393-E0A9-E50E24DCCA9E","6E400001-B5A3-F393-E0A9-E50E24DCCA9E"),t.y),$async$wz)
+return A.W(A.ho(k.bleConnect("S3_STM32_Bridge","6e400001-b5a3-f393-e0a9-e50e24dcca9e","6e400001-b5a3-f393-e0a9-e50e24dcca9e"),t.y),$async$wz)
 case 7:m=b
 k=m
 n.b=k
-if(k)n.qS("Connected to S_STM32_Bridge","RX")
+if(k)n.qS("Connected to S3_STM32_Bridge","RX")
 k=n.b
 q=k
 s=1
